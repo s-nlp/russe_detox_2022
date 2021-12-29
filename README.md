@@ -11,7 +11,7 @@ We provide two baselines:
 ## Data
 
 We provide a parallel detoxification dataset: Russian toxic sentences and their detoxified version which were manually written and validated by crowd workers:
-- **training** - 3,539 sentences with 1 to 3 detoxified versions.
+- **training** (!!!updated 29.12.2021!!!) - 6,948 sentences with 1 to 3 detoxified versions.
 - **development** - 800 sentences with 1 to 3 detoxified versions.
 
 Test set will be made available during the evaluation phase.
