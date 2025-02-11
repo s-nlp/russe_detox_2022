@@ -21,7 +21,7 @@ Test set will be made available during the evaluation phase.
 We provide scripts which will be used for automatic evaluation of the models during the development phase of the competition. These are the same versions as the ones we use at CodaLab, so you should get the same scores as there.
 
 We compute the following metrics:
-- **Style transfer accuracy (STA)** -- the average confidence of the pre-trained BERT-based toxicity classifier for the output sentences.
+- **Style transfer accuracy (STA)** -- the average confidence of the pre-trained BERT-based toxicity classifier for the output sentences. 🤗 [Classifier](https://huggingface.co/s-nlp/russian_toxicity_classifier)
 - **Meaning preservation (SIM)** -- the distance of embeddings of the input and output sentences. The embeddings are generated with the [LaBSE](https://arxiv.org/abs/2007.01852) model.
 - **Fluency score (FL)** -- the average confidence of the BERT-based fluency classifier trained to discriminate between real and corrupted sentences.
 - **Joint score (J)** -- the sentence-level multiplication of the STA, SIM, and FL scores.
