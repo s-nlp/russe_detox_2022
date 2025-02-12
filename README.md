@@ -1,12 +1,12 @@
 # The First Competition on Detoxification for Russian
 
-This repository contains the data and scripts for the [Detoxification shared task](https://russe.nlpub.org/2022/tox/) at Dialogue-2022. You can participate in the shared task by submitting your models to [CodaLab](https://codalab.lisn.upsaclay.fr/competitions/642).
+This repository contains the data and scripts for the [Text Detoxification shared task RUSSE2022](https://russe.nlpub.org/2022/tox/) at Dialogue-2022. You can participate in the shared task by submitting your models to [CodaLab](https://codalab.lisn.upsaclay.fr/competitions/642).
 
 ## Baselines
 
 We provide two baselines:
 - **Delete** -- this is an unsupervised rule-based detoxification model which removes all rude and swear words. The vocabulary of swear words is provided.
-- **Fine-tuned T5** -- this is a supervised model which is based on a Russian [T5](https://arxiv.org/abs/1910.10683) (Transformer pre-trained on a large number of tasks) which was fine-tuned on the parallel detoxification data which we provide.
+- **Fine-tuned T5** -- this is a supervised model which is based on a Russian [T5](https://arxiv.org/abs/1910.10683) (Transformer pre-trained on a large number of tasks) which was fine-tuned on the parallel detoxification data which we provide. 🤗[ruT5-base-detox](https://huggingface.co/s-nlp/ruT5-base-detox)
 
 ## Data
 
@@ -15,6 +15,8 @@ We provide a parallel detoxification dataset: Russian toxic sentences and their 
 - **development** - 800 sentences with 1 to 3 detoxified versions.
 
 Test set will be made available during the evaluation phase.
+
+The data is available online: 🤗[ru-paradetox](https://huggingface.co/datasets/s-nlp/ru_paradetox)
 
 ## Evaluation
 
@@ -58,3 +60,7 @@ We compute the following metrics:
     abstract = "Text detoxification is a textual style transfer (TST) task where a text is paraphrased from a toxic surface form, e.g. featuring rude words, to the neutral register. Recently, text detoxification methods found their applications in various task such as detoxification of Large Language Models (LLMs) (Leong et al., 2023; He et al., 2024; Tang et al., 2023) and toxic speech combating in social networks (Deng et al., 2023; Mun et al., 2023; Agarwal et al., 2023). All these applications are extremely important to ensure safe communication in modern digital worlds. However, the previous approaches for parallel text detoxification corpora collection{---}ParaDetox (Logacheva et al., 2022) and APPADIA (Atwell et al., 2022){---}were explored only in monolingual setup. In this work, we aim to extend ParaDetox pipeline to multiple languages presenting MultiParaDetox to automate parallel detoxification corpus collection for potentially any language. Then, we experiment with different text detoxification models{---}from unsupervised baselines to LLMs and fine-tuned models on the presented parallel corpora{---}showing the great benefit of parallel corpus presence to obtain state-of-the-art text detoxification models for any language.",
 }
 ```
+
+## Contact
+
+For any questions, test data request, please, contact: [Daryna Dementieva](mailto:dardem96@gmail.com)
