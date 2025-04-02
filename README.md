@@ -18,6 +18,13 @@ Test set will be made available during the evaluation phase.
 
 The data is available online: 🤗[ru-paradetox](https://huggingface.co/datasets/s-nlp/ru_paradetox)
 
+### Annotation Steps Data
+
+We also release publically 🤗 the results of data collection from each crowdsourcing annotation task:
+* *Task 1: Generation of Paraphrases*: [s-nlp/ru_non_detoxified](https://huggingface.co/datasets/s-nlp/ru_non_detoxified)
+* *Task 2: Content Preservation Check*: [s-nlp/ru_paradetox_content](https://huggingface.co/datasets/s-nlp/ru_paradetox_content)
+* *Task 3: Toxicity Check*: [s-nlp/ru_paradetox_toxicity](https://huggingface.co/datasets/s-nlp/ru_paradetox_toxicity)
+
 ## Evaluation
 
 We provide scripts which will be used for automatic evaluation of the models during the development phase of the competition. These are the same versions as the ones we use at CodaLab, so you should get the same scores as there.
